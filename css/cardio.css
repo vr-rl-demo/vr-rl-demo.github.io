@@ -185,7 +185,9 @@ nav.navbar-fixed-top {
 nav.navbar-fixed-top .navbar-nav > li > a:not(.btn) {
 	color: #bbb;
 }
-
+nav.navbar .navbar-nav > li > a:hover {
+    color: #00b380;
+}
 .icon-bar {
 	background: #bbb;
 }
