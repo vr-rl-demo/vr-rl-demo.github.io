@@ -1,1 +1,2 @@
-# Using a Reinforcement Learning system to learn how to visualize big data 
+# Website for VR-based Visualizations
+## Visualizations based off of Reinforement Learning
