@@ -19,6 +19,9 @@
 	<meta name="msapplication-TileColor" content="#00a8ff">
 	<meta name="msapplication-config" content="img/favicons/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
+
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 	<!-- Normalize -->
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<!-- Bootstrap -->
@@ -34,7 +37,11 @@
 	<!-- Main style -->
 	<link rel="stylesheet" type="text/css" href="css/cardio.css">
 </head>
-
+<style>
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+</style>
 <body>
 	<div class="preloader">
 		<img src="img/loader.gif" alt="Preloader image">
@@ -86,10 +93,27 @@
 	</section>
 	<section id="why" class="section section-padded">
 		<div class="container">
-			<div class="row text-center title">
-				<h2>Why Learn?</h2>
-				<h4 class="light" style="padding-top:6%;">The onset and recent prevalence of virtual reality adds a new dimension to our digital experience, and brings numerous opportunities to visually enhance the data exploration experience. Data exploration capabilities of any virtual reality framework, however, rely on the backend data system, which stores, operates on, and curates data. We co-design data systems with virtual reality devices aimed at exploring huge data sets.</h4>
-			</div>
+			<div class="row">
+				<div class="text-center title">
+					<div class="container col-md-6">
+					<i class="fa fa-gears" style="font-size:48px;"></i>
+					<h2 class>					
+						Collect and Curate Information
+					</h2>
+					<h4 class="row light" style="padding-top:4%;padding-right:3%;">ExploVR continuously speculates and collects strategic cues, such as descriptive statistics and trend estimators and provides them alongside data at the required frame rate to the VR front end.</h4>
+					</div>
+					<div class="container col-md-6">
+
+					<i class="fa fa-users" style=" font-size:46px;" aria-hidden="true"></i>
+					<h2 class>
+						Learn from User Interactions
+					</h2>
+					<h4 class="row light" style="padding-top:4%;padding-right:3%;">As data scientists use ExploVR to explore data, every interaction - navigation, button presses, and gestures - is considered as an opportunity to directly refine and tune various internal parameters such as the granularity of collected information and part of a data set to target.</h4>
+					</div>
+					<!--<h2>Why Learn?</h2>
+					<h4 class="light" style="padding-top:6%;">The onset and recent prevalence of virtual reality adds a new dimension to our digital experience, and brings numerous opportunities to visually enhance the data exploration experience. Data exploration capabilities of any virtual reality framework, however, rely on the backend data system, which stores, operates on, and curates data. We co-design data systems with virtual reality devices aimed at exploring huge data sets.</h4> -->
+				</div>
+			</div>	
 		</div>	
 	</section>	
 		<section id="research" class="section section-padded">	
@@ -243,7 +267,7 @@
 				<div class="col-md-8 col-md-offset-2">
 						<div class="row title text-center">
 							<h2 class="white light">Demo</h2>
-				</div>
+						</div>
 						<div class="item text-center">					
 							<h4 class="white light">Learning a user’s preference to visualize data set</h4>
 							<h4 class="light-white light">#RL #VR</h4>
@@ -255,6 +279,64 @@
 						
 				</div>
 			</div>
+			<div class="row title text-center">
+				<h2 class="white light">GIFs of the Demo</h2>
+				<div class="item text-center">					
+							<h4 class="white light">Data Visualization in VR</h4>
+							<h4 class="light-white light">#RL #VR</h4>
+						</div>
+			</div>
+			<div class="w3-content w3-display-container">
+
+			<a class="w3-btn-floating w3-hover-dark-grey w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
+			<a class="w3-btn-floating w3-hover-dark-grey w3-display-right" onclick="plusDivs(1)">&#10095;</a>
+
+			<div class="w3-display-container mySlides">
+			  <img src="img/demo_1.gif" style="width:100%">
+			</div>
+
+			<div class="w3-display-container mySlides">
+			  <img src="img/queriosity_logo.png" style="width:100%">			
+			</div>
+
+			<div class="w3-display-container mySlides">
+			  <img src="img/demo_1.gif" style="width:100%">			  
+			</div>
+
+			<div class="w3-display-container mySlides">
+			  <img src="img/queriosity_logo.png" style="width:100%">
+			  
+			</div>
+
+			<div class="w3-display-container mySlides">
+			  <img src="img/demo_1.gif" style="width:100%">
+			  
+			</div>
+
+			</div>
+
+			<script>
+			var slideIndex = 1;
+			showDivs(slideIndex);
+
+			function plusDivs(n) {
+			  showDivs(slideIndex += n);
+			}
+
+			function showDivs(n) {
+			  var i;
+			  var x = document.getElementsByClassName("mySlides");
+			  if (n > x.length) {slideIndex = 1}
+			  if (n < 1) {slideIndex = x.length}
+			  for (i = 0; i < x.length; i++) {
+			     x[i].style.display = "none";
+			  }
+			  x[slideIndex-1].style.display = "block";
+			}
+			</script>
+
+
+
 		</div>
 	</section>
 	<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
